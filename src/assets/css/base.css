@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  background-image: url("../img/bg.png");
+  background-color: #1B1C1D;
+}
+
+#imgamp img {
+  /* width: 100%; */
+  max-width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgb(0, 0, 0);
+}
