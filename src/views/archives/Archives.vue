@@ -56,14 +56,12 @@ export default {
       url: "archivemap",
       success: res => {
         this.mapArchives = res;
-        console.log(res);
       }
     });
     $.get({
       url: "blogcount",
       success: res => {
         this.blogcount = res;
-        console.log(res);
       }
     });
   },

@@ -187,7 +187,6 @@ export default {
     //发布
     commentPost() {
       var boo = $(".ui.form").form("validate form");
-      console.log(this.data);
       setCookie("nickname", this.data.nickname, 30);
       setCookie("email", this.data.email, 30);
       if (boo) {
@@ -200,7 +199,6 @@ export default {
               $(window).scrollTo("#comment-container", 400);
               this.delInput();
             } else {
-              console.log(res);
               $(".errmsg-button").click();
             }
             this.isDisabled = true;
@@ -220,13 +218,11 @@ export default {
     },
     //回复点击
     reply(id, nickname) {
-      console.log(id, nickname);
       $("[name='content']")
         .attr("placeholder", "@" + nickname)
         .focus();
       this.data["parentComment.id"] = id;
       $(window).scrollTo($("#comment-form"), 500);
-      console.log(this.data);
     },
     //
     //序列化时间

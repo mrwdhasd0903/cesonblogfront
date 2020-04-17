@@ -48,8 +48,6 @@ export default {
     loadOK() {
       this.loadCount++;
       if (this.loadCount == this.carousel.items.length) {
-        console.log("ok");
-        
         $(".shape").shape();
         setInterval(() => {
           $(".shape").shape("flip left");

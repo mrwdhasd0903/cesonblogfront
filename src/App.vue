@@ -15,7 +15,12 @@ import FooterBar from "components/footer/FooterBar";
 
 export default {
   name: "App",
-  components: { NavBar, FooterBar }
+  components: { NavBar, FooterBar },
+  mounted() {
+    $.post({
+      url: "trafficUp"
+    });
+  }
 };
 </script>
 
