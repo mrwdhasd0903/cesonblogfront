@@ -118,7 +118,7 @@ export default {
   methods: {
     //日期序列化
     ChangeDateFormat(date) {
-      return ChangeDateFormat(date);
+      return ChangeDateFormat(date).substring(0, 10);
     },
     //对父组件的跳页多一层封装
     thisPageJump(a) {

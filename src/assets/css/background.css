@@ -1,0 +1,128 @@
+.night {
+  background: #1B1C1D url(../img/bg_stars.png) repeat 20% 20% fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: stars-anim 600s infinite linear;
+  -moz-animation: stars-anim 600s infinite linear;
+  -o-animation: stars-anim 600s infinite linear;
+  animation: stars-anim 600s infinite linear
+}
+
+.day {
+  background: #1B1C1D url("../img/bg.png") repeat;
+}
+
+.lamp-switch {
+  cursor: pointer;
+  height: 78px;
+  width: 43px;
+  position: absolute;
+  background: url(../img/lampoff.png);
+  background-size: cover;
+}
+
+.lamp-switch:hover {
+  height: 94px;
+  width: 43px;
+  background: url(../img/lampon.png);
+  background-size: cover;
+}
+
+
+.moon {
+  background: url(../img/bg_moon.png) no-repeat 35% 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  z-index: 0;
+  -webkit-animation: moon-anim 30s infinite linear;
+  -moz-animation: moon-anim 30s infinite linear;
+  -o-animation: moon-anim 30s infinite linear;
+  animation: moon-anim 30s infinite linear
+}
+
+
+@-webkit-keyframes moon-anim {
+  from {
+    background-position: -20% 20%
+  }
+
+  to {
+    background-position: 120% 2%
+  }
+}
+
+@-moz-keyframes moon-anim {
+  from {
+    background-position: -20% 20%
+  }
+
+  to {
+    background-position: 120% 2%
+  }
+}
+
+@-o-keyframes moon-anim {
+  from {
+    background-position: -20% 20%
+  }
+
+  to {
+    background-position: 120% 2%
+  }
+}
+
+@keyframes moon-anim {
+  from {
+    background-position: -20% 20%
+  }
+
+  to {
+    background-position: 120% 2%
+  }
+}
+
+@-webkit-keyframes stars-anim {
+  from {
+    background-position: 5% 600%
+  }
+
+  to {
+    background-position: 1300% 5%
+  }
+}
+
+@-moz-keyframes stars-anim {
+  from {
+    background-position: 5% 600%
+  }
+
+  to {
+    background-position: 1300% 5%
+  }
+}
+
+@-o-keyframes stars-anim {
+  from {
+    background-position: 5% 600%
+  }
+
+  to {
+    background-position: 1300% 5%
+  }
+}
+
+@keyframes stars-anim {
+  from {
+    background-position: 5% 600%
+  }
+
+  to {
+    background-position: 1300% 5%
+  }
+}

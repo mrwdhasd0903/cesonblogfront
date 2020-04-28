@@ -79,7 +79,7 @@
         <button class="ui wechat icon button">
           <i class="weixin icon"></i>
         </button>
-        <button @click="lightChange" class="ui icon button">
+        <button @click="setNight" class="ui icon button">
           <i class="lightbulb outline icon"></i>
         </button>
         <div id="toTop-button" class="ui icon button">
@@ -123,7 +123,6 @@ export default {
   components: { NoFind, Appreciation, ShareStatement, CommentBar },
   data() {
     return {
-      lightFlag: true,
       blog: null,
       contacts: {}
     };
@@ -132,7 +131,6 @@ export default {
     this.blog = null;
   },
   activated() {
-    this.lightFlag = $("body").css("backgroundImage");
     if (this.$route.params.bid) {
       $.get({
         url: "blog",
@@ -157,19 +155,9 @@ export default {
       this.noFindShow = false;
     }
   },
+  inject: ["setNight"],
   computed: {},
   methods: {
-    //开关灯
-    lightChange() {
-      if (this.lightFlag) {
-        $("body").css({
-          "background-image": "none"
-        });
-      } else {
-        $("body").removeAttr("style");
-      }
-      this.lightFlag = !this.lightFlag;
-    },
     //获取地址
     getWindowHref() {
       return window.location.href;

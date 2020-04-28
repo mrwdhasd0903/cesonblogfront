@@ -31,6 +31,9 @@ const routes = [{
 }, {
   path: '/blog/:bid',
   component: () => import('views/blog/Blog')
+}, {
+  path: '/traffic',
+  component: () => import('views/traffic/Traffic')
 }]
 
 const router = new VueRouter({

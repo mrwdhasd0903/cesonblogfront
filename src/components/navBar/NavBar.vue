@@ -1,5 +1,8 @@
 <template>
-  <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+  <nav
+    :class="toggleClass?'nav':'nav-down'"
+    class="ui info inverted attached segment m-padded-tb-mini m-shadow-small"
+  >
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
         <h2 class="ui teal header item">
@@ -40,6 +43,13 @@
         >
           <i class="mini info icon"></i>关于小王
         </a>
+        <a
+          @click="navjump('/traffic')"
+          class="item"
+          :class="{active:$route.path.indexOf('/traffic')!=-1,'m-mobile-hide':toggleClass}"
+        >
+          <i class="mini chart pie icon"></i>流量统计
+        </a>
         <div class="right item" :class="{'m-mobile-hide':toggleClass}">
           <div class="ui icon inverted transparent input m-margin-tb-tiny">
             <input type="text" v-model="searchKey" placeholder="Search...." />
@@ -48,6 +58,7 @@
         </div>
       </div>
     </div>
+    <div class="lamp-switch" @click="setNight"></div>
     <a @click="menuToggle" class="ui menu toggle black icon button m-right-top m-mobile-show">
       <i class="sidebar icon"></i>
     </a>
@@ -64,6 +75,7 @@ export default {
       searchKey: ""
     };
   },
+  inject: ["setNight"],
   mounted() {},
   computed: {},
   methods: {
@@ -92,4 +104,14 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 767px) {
+  .nav {
+    height: 59.56px;
+    transition: all 0.2s ease;
+  }
+  .nav-down {
+    transition: all 0.2s ease;
+    height: 321.94px;
+  }
+}
 </style>

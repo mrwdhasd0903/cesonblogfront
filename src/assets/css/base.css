@@ -8,8 +8,13 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-  background-image: url("../img/bg.png");
-  background-color: #1B1C1D;
+  /* background-image: url("../img/bg.png");
+  background-color: #1B1C1D; */
+}
+
+.info {
+  position: relative;
+  z-index: 10;
 }
 
 #imgamp img {

@@ -10,6 +10,7 @@ export function imgAmp(Class) {
     left:50%;
     position: fixed;
     width:100%;
+    z-index: 99;
     transform: translate(-50%,-50%);
     display:none
     "></div>`, "text/html").getElementsByTagName('div')[0]);
