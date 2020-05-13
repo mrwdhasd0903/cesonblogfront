@@ -1,7 +1,7 @@
 export function brokenLine(resourceData, canvas) {
   //参数
   var xSpace = 50, //x轴间距
-    ySpace = 2, //y轴间距
+    ySpace = 1, //y轴间距
     yPadding = 30, //上下边距
     xPadding = 40, //左右边距
     //渐变颜色组

@@ -16,7 +16,7 @@
             <div class="ui header">关于小王</div>
           </div>
           <div class="ui attached segment">
-            <p class="m-text">王达浩，一个经历生活无数次殴打但还热衷于生活的少年.</p>
+            <p class="m-text">王达浩，一个经历生活无数次殴打但还热衷于生活的骚年.</p>
             <p class="m-text">热爱编程，喜欢折腾，全栈路上...</p>
             <p class="m-text">-国家一级退堂鼓表演专家</p>
             <p class="m-text">-知名做白日梦研究专家</p>
@@ -26,17 +26,15 @@
             <p class="m-text">-国家一级熬夜冠军</p>
             <p class="m-text">-夜宵外卖品鉴师</p>
             <p class="m-text">-回笼觉表演专家</p>
-            
-
           </div>
           <div class="ui attached segment">
-            <div class="ui orange basic left pointing label">林俊杰</div>
-            <div class="ui orange basic left pointing label">怪人</div>
-            <div class="ui orange basic left pointing label">焖烧</div>
-            <div class="ui orange basic left pointing label">社恐</div>
-            <div class="ui orange basic left pointing label">沙雕</div>
-            <div class="ui orange basic left pointing label">B站</div>
-            <div class="ui orange basic left pointing label">B乎</div>
+            <div class="ui orange basic left pointing label m-margin-tb-tiny">林俊杰</div>
+            <div class="ui orange basic left pointing label m-margin-tb-tiny">大三dog</div>
+            <div class="ui orange basic left pointing label m-margin-tb-tiny">怪人</div>
+            <div class="ui orange basic left pointing label m-margin-tb-tiny">焖烧</div>
+            <div class="ui orange basic left pointing label m-margin-tb-tiny">沙雕</div>
+            <div class="ui orange basic left pointing label m-margin-tb-tiny">B站</div>
+            <div class="ui orange basic left pointing label m-margin-tb-tiny">B乎</div>
           </div>
           <div class="ui attached segment">
             <div class="ui teal basic left pointing label m-margin-tb-tiny">JavaScript</div>

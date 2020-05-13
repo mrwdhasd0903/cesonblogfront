@@ -1,5 +1,9 @@
 <template>
   <div class>
+    <!-- loading -->
+    <div class="loading" v-if="isLoading">
+      <xhh-loading></xhh-loading>
+    </div>
     <!--content-->
     <div class="ui top attached teal segment">
       <div
@@ -98,10 +102,15 @@
 
 <script>
 import ChangeDateFormat from "utils/ChangeDateFormat";
+import XhhLoading from "components/xhhLoading/XhhLoading";
 export default {
   name: "BlogList",
-  components: {},
-  data() {},
+  components: { XhhLoading },
+  data() {
+    return {
+      isLoading: true
+    };
+  },
   props: {
     pageJump: {
       type: Function,
@@ -114,6 +123,9 @@ export default {
     },
     pageBlog: {}
   },
+  updated() {
+    this.isLoading = false;
+  },
   computed: {},
   methods: {
     //日期序列化
@@ -122,6 +134,7 @@ export default {
     },
     //对父组件的跳页多一层封装
     thisPageJump(a) {
+      this.isLoading = true;
       this.pageJump(a);
       $(window).scrollTo(0, 200);
     }
@@ -129,6 +142,5 @@ export default {
   mounted() {}
 };
 </script>
-
-<style scoped>
+<style scope>
 </style>
