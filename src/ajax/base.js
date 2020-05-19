@@ -4,8 +4,7 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
     },
     options.crossDomain = true,
     options.beforeSend = XMLHttpRequest => {
-      XMLHttpRequest.setRequestHeader("token", "qingnibuyaogaowo");
+      XMLHttpRequest.setRequestHeader("token", "MyToken");
     }
-  options.url = "http://47.113.92.137:8088/" + originalOptions.url
-  // options.url = "http://localhost:8088/" + originalOptions.url
+  options.url = "http://localhost:8088/" + originalOptions.url
 });
