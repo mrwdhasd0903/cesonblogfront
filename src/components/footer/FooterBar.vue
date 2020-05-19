@@ -17,7 +17,7 @@
               :key="'listLink'+index"
               :href="item.link"
               class="item m-text-thin"
-              arget="_blank"
+              target="_blank"
             >{{item.name}}</a>
           </div>
         </div>

@@ -18,18 +18,31 @@ video {
   max-width: 100%;
 }
 
+/* 行内代码 */
+code {
+  padding: 1px 5px;
+  background-color: #bee2db;
+  border-radius: 2px;
+  margin: 0 3px;
+}
 
 /* 代码片断 */
 .typo pre,
 .typo code,
 .typo pre tt {
-  font-size: 1.1em;
-  line-height: 2em;
   font-family: Courier, 'Courier New', monospace;
 }
 
+pre>code {
+  background-color: #3a3a3a;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
 .typo pre {
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .typo p {

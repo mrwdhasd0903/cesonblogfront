@@ -42,8 +42,6 @@ export default {
       }
     };
   },
-  mounted() {},
-  computed: {},
   methods: {
     loadOK() {
       this.loadCount++;
