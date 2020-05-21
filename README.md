@@ -1,3 +1,6 @@
+
+> 部署视频教程已上传b站,配合食用更佳<a target="_blank" href="https://www.bilibili.com/video/BV12K4y1t7C6/">BV12K4y1t7C6</a>
+
 ## 0\了解整个网站架构
 
 ![15898780231.jpg](http://47.113.92.137:8888/upload/io/img/2020/5/19/1589878118528.jpg)
@@ -67,9 +70,10 @@
 
 ### 6.1\业务接口部署
 
-1. 命令行进入`cesonblog`项目目录
-2. 执行`mvn spring-boot:run`运行环境(若运行失败请检查maven环境变量或者导入IDEA)
-3. 确认运行成功后,回到浏览器测试后台页面是否能登录系统,账号`admin`,密码`123456`
+1. 部署前请确认`MySql`账号为`root`密码为`123456`,否则请去改`SpringBoot`全局配置文件
+2. 命令行进入`cesonblog`项目目录
+3. 执行`mvn spring-boot:run`运行环境(若运行失败请检查maven环境变量或者导入IDEA)
+4. 确认运行成功后,回到浏览器测试后台页面是否能登录系统,账号`admin`,密码`123456`
 
 ### 6.2\文件存储接口部署
 
@@ -83,5 +87,9 @@
 ![15898831071.jpg](http://47.113.92.137:8888/upload/io/img/2020/5/19/1589883240494.jpg)
 
 > 至此，整个网站基本部署完成，如果对你有帮助请在GitHub上star这些项目<a href="https://github.com/mrwdhasd0903">小王的github</a>
->
-> 另外，关于一些配置我会继续在本文更新，请继续关注<a href="http://www.wdhhh.cn/blog/247">本篇博客</a>
+> 
+> 一些配置的内容在b站的视频中有讲到<a target="_blank" href="https://www.bilibili.com/video/BV12K4y1t7C6/">BV12K4y1t7C6</a>
+
+
+
+> 免责声明:所有开源代码仅适用于学习交流,请勿商用,为此构成的侵权行为本人不负任何责任
