@@ -5,7 +5,8 @@
       <xhh-loading></xhh-loading>
     </div>
     <!--content-->
-    <div class="ui top attached teal segment">
+	<transition name="fade">
+    <div v-if="vShow" class="ui top attached teal segment">
       <div
         class="ui padded vertical segment m-padded-tb-large"
         v-for="(item,index) in pageBlog.content"
@@ -77,6 +78,7 @@
         </div>
       </div>
     </div>
+	</transition>
 
     <!--footer-->
     <div class="ui bottom attached segment" v-if="pageBlog.totalPages>1">
@@ -108,7 +110,8 @@ export default {
   components: { XhhLoading },
   data() {
     return {
-      isLoading: true
+      isLoading: true,
+	  vShow: true
     };
   },
   props: {
@@ -125,6 +128,7 @@ export default {
   },
   updated() {
     this.isLoading = false;
+	this.vShow = true;
   },
   computed: {},
   methods: {
@@ -135,12 +139,20 @@ export default {
     //对父组件的跳页多一层封装
     thisPageJump(a) {
       this.isLoading = true;
+	  this.vShow = false;
       this.pageJump(a);
-      $(window).scrollTo(0, 200);
+      //$(window).scrollTo(0, 200);
     }
   },
   mounted() {}
 };
 </script>
 <style scope>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 </style>

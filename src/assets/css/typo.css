@@ -21,7 +21,7 @@ video {
 /* 行内代码 */
 code {
   padding: 1px 5px;
-  background-color: #bee2db;
+  /*background-color: #bee2db;*/
   border-radius: 2px;
   margin: 0 3px;
 }
@@ -34,7 +34,7 @@ code {
 }
 
 pre>code {
-  background-color: #3a3a3a;
+  /*background-color: #3a3a3a;*/
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -237,7 +237,7 @@ th {
 
 
 .typo pre {
-  background: #292929;
+  /*background: #292929;*/
   border: 1px solid #ddd;
   padding: 1em 1.5em;
   display: block;
