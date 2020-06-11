@@ -13,6 +13,7 @@
 import "ajax/base";
 import NavBar from "components/navBar/NavBar";
 import FooterBar from "components/footer/FooterBar";
+var _hmt = _hmt || [];
 
 export default {
   name: "App",
@@ -26,13 +27,22 @@ export default {
     $.post({
       url: "trafficUp"
     });
+    this.baidustatistical();
   },
   provide() {
     return {
-      setNight: this.setNight
+      setNight: this.setNight,
+      baidustatistical: this.baidustatistical
     };
   },
   methods: {
+    //百度统计
+    baidustatistical() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2bfc05a1c19c23b09afa56201053d18e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    },
     setNight() {
       this.isNight = !this.isNight;
     }
@@ -41,7 +51,4 @@ export default {
 </script>
 
 <style>
-@import "assets/css/base.css";
-@import "assets/css/me.css";
-@import "assets/css/background.css";
 </style>

@@ -19,9 +19,11 @@ video {
 }
 
 /* 行内代码 */
-code {
+li>code,
+p>code {
+  background-color: #f2f2f2;
+  color: #c7254e;
   padding: 1px 5px;
-  /*background-color: #bee2db;*/
   border-radius: 2px;
   margin: 0 3px;
 }
@@ -34,7 +36,6 @@ code {
 }
 
 pre>code {
-  /*background-color: #3a3a3a;*/
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -47,13 +48,13 @@ pre>code {
 
 .typo p {
   font-size: 16px;
-  font-weight: 300;
+  /* font-weight: 300; */
   line-height: 1.8;
   text-align: justify;
 }
 
 .typo li {
-  font-weight: 300;
+  /* font-weight: 300; */
   padding: 4px 0;
 }
 
@@ -108,10 +109,10 @@ img {
 .typo blockquote {
   position: relative;
   color: #999;
-  font-weight: 400;
-  border-left: 1px solid #1abc9c;
+  /* font-weight: 400; */
+  border-left: 2px solid #1abc9c;
   padding-left: 1em;
-  margin: 1em 3em 1em 2em;
+  margin: 1em 3em 1em 1em;
 }
 
 @media only screen and (max-width: 640px) {
@@ -146,7 +147,7 @@ em,
 th,
 var {
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 /* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
@@ -237,7 +238,7 @@ th {
 
 
 .typo pre {
-  /*background: #292929;*/
+  /* background: #292929; */
   border: 1px solid #ddd;
   padding: 1em 1.5em;
   display: block;
@@ -331,7 +332,7 @@ blockquote {
 .typo h5,
 .typo h6 {
   font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
-  font-weight: 100;
+  /* font-weight: 100; */
   color: #000;
   line-height: 1.35;
 }

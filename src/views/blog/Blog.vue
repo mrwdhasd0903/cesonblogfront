@@ -131,6 +131,7 @@ export default {
     this.blog = null;
   },
   activated() {
+    this.baidustatistical();
     if (this.$route.params.bid) {
       $.get({
         url: "blog",
@@ -155,7 +156,7 @@ export default {
       this.noFindShow = false;
     }
   },
-  inject: ["setNight"],
+  inject: ["setNight", "baidustatistical"],
   computed: {},
   methods: {
     //获取地址
