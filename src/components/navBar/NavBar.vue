@@ -111,6 +111,10 @@ export default {
 </script>
 
 <style scoped>
+i{
+  transform: translateY(-3px);
+  margin-right:1em !important;
+}
 @media screen and (max-width: 767px) {
   .nav {
     height: 59.56px;
